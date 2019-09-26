@@ -10,19 +10,51 @@ version 9.24
 <main>
     <header>
 		<h1 id="top">Mac's Portfolio</h1></nav>
+	<link href="styles/teststyles.css" rel="stylesheet" type="text/css" />
 	</header>
+	
+	
+	
+	<style>
+		caption{
+			font-weight:bold;
+			font-size:1.2em;
+			margin:8px;
+			}
+		th{
+			color:white;
+			}
+		table, th, td{
+			border:1px solid white;
+			border-collapse:collapse;
+			padding:5px 10px;
+			}
+		table{
+			width:90%;
+			margin:auto;
+			}
+		tr{
+			height:30px;
+			}
+		thead{
+			background-color:#0d1f2d;
+			}
+		tbody tr:nth-child(even){
+			background-color:#ededed;
+			}
+		
+		
+	</style>
+	
 
-<!-- I need to add links to projects.html, contact.html and testimonials.html -->
-	<nav>
-	<hr />
+	<nav class="border">
 		<p><a href="projects.html" target="_self">Projects</a></p>
 		<p><a href="contact.html">Contact Me</a></p>
 		<p><a href="testimonials.html">Testimonials</a></P>
-	<hr />
 	</nav>
 
 <section>
-	<article id="about_me">
+	<article class="border" id="about_me">
 		<h2><em>About Me</em></h2>
 		
 		<img src="images/portrait.jpg" alt="portrait of Mac"/ style="height:450px">
@@ -37,13 +69,16 @@ version 9.24
 	<article id="past_experiences">
 		<h2><em>Past Experiences</em></h2>
 		<img src="images/logo.png" alt="UMM Logo" style="height:450px"/>
-			<table border="1" width="60%">
+			<table>
 				<caption>Employment History</caption>
+				<thead>
 				<tr>
 					<th>Years of Employment</th>
 					<th>Title</th>
 					<th>Company</th>
 				</tr>
+				</thead>
+				<tbody>
 				<tr>
 					<td>2012-2017</td>
 					<td>Foreman</td>
@@ -54,6 +89,7 @@ version 9.24
 					<td>Merchandiser</td>
 					<td>J Bros</td>
 				</tr>
+				</tbody>
 			
 			</table>
 	</article>
@@ -81,7 +117,6 @@ version 9.24
 </section>
 
 	<footer>
-<hr />
 		<p><a href="#top">Goto Top of Page</a></p>
 		<p> &copy; 2019 Mac Ferguson, All rights reserved.</p>
 	</footer>

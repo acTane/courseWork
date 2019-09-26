@@ -1,0 +1,42 @@
+/*
+Mac Ferguson
+sep26
+version 9.26
+
+*/
+a{
+	text-decoration:none;
+	}
+
+a:hover{
+	text-decoration:underline
+	}
+		
+header{
+	background-color:#0d1f2d;
+	color:white;
+	/*height:100px;*/
+	text-align:center;
+	padding:30px 10px 20px 10px;
+	font-size:2.5em;
+	}
+footer{
+	background-color:#0d1f2d;
+	color:white;
+	text-align:center;
+	padding:30px 10px 20px 10px;
+	height:100px;
+	}
+
+body{
+	background-color:#fef9ff;
+	/*color:white;*/
+	font-family:arial, helvetica,sans-serif;
+	}
+		
+nav{
+	border-top:3px dashed #0d1f2d;
+	border-bottom:3px dashed #0d1f2d;
+	margin-top:4px;
+	margin-top:4px;
+	}
