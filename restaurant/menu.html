@@ -7,55 +7,165 @@
 <html lang="en"> 
     <head> 
         <title>Page Title</title>	
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			caption{
+				font-weight:bold;
+				font-size:1.2em;
+				margin:8px;
+			}
+			th{
+				color:#d4af37;
+				font-weight:bold;
+				text-align:left;
+				}
+			/*table{
+				border:1px solid #800000;
+				border-collapse:collapse;
+				padding:5px 10px;
+				}
+				*/
+			table{
+				width:60%;
+				margin:auto;
+				}
+			tr{
+				height:30px;
+				}
+			thead{
+				background-color:#800000;
+				}
+				
+			tbody{
+				background-color:#fff;
+				}
+			tbody tr:nth-child(even){
+				background-color:#ededed;
+				}
+				
+			p.food{
+				text-align:center;
+				font-weight:bold;
+				font-size:1.5em;
+				}
+				
+			p.description{
+				text-align:center;
+				}
+		</style>
+		
     </head> 
     
     <body>
         <header>
-			<center>
+			
             <h1>Mac's Pub</h1>
-			</center>
+			
         </header>
 
         <nav>
-				<hr />
-				<a href="home.html">Home</a><br />
-				<a href="menu.html">Menu</a><br />
+				
+				<a href="home.html">Home</a>
+				<a href="menu.html">Menu</a>
 				<a href="contact.html">Contact Us</a>
-				<hr />
+				<div class="clear-float"></div>
         </nav>
 		
+		<section class="menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<p class="food">
+							Cheese Burger
+						</p>
+						<p class="description">
+							10oz sirloin beef patty served California style. Comes with fries or toast.
+						</P>
+						<p class="description">
+							$10.50
+						</p>
+					</div>
+					<div class="col-lg-4">
+						<p class="food">
+							Fish and Chips
+						</p>
+						<p class="description">
+							Atlantic cod beer battered and served over a bed of hot chips. Tartar sauce and vinegar on the side.
+						</p>
+						<p class="description">
+							$11.75
+						</p>
+					</div>
+					<div class="col-lg-4">
+						<p class="food">
+							Irish Stew
+						</p>
+						<p class="description">
+							Beef round carrots potatoes and onions. We keep our stew simple and traditional. Served with a dinner roll.
+						</p>
+						<p class="description">
+							$12.25
+						</p>
+					</div>
+				</div>
+			</div>
+		
+		
+		</section>
+		
+		
+		
+		
+		
 		<section>
-			<table width="100%" >
+			<table>
+			<thead>
 				<tr>
-					<th>Fish and Chips</th>
-					<th>Irish Stew</th>
-					<th>Bleu Burger</th>
+					<th colspan="2">Beverages</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
 				</tr>
 				
 				<tr>
-					<td><center>Our house specialty.<br /> Crisp atlantic cod served with fresh fried chip pilled high!</center></td>
-					<td><center>A winter favorite! <br />This stew has been a family recipe for over 10 generations.</center></td>
-					<td><center>The classic Bleu burger.<br /> Burger piled high with bleu cheese and carmalized onions.</center></td>
+					<td>Bottled Water</td>
+					<td>$1.25</td>
 				</tr>
-					
-		
-		
-		
-		
-		
+				
+				<tr>
+					<td>Lemonade</td>
+					<td>$1.00</td>
+				</tr>
+				
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+			</tbody>
 			</table>
 		</section>
 
         <footer>
-			<hr />
-			<center>
+			
 			<p>
 				Park street, Point Place, MN, 55123
 			</P>
 			<p>
 				(555) 111-5555
 			</P>
-			</center>
+			
         </footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body> 
 </html>

@@ -1,0 +1,57 @@
+/*
+Mac Ferguson
+Sep 27
+version 9.27
+*/
+
+header{
+	background-color:#800000;
+	color:#d4af37;
+	/*height:100px;*/
+	text-align:center;
+	padding:30px 10px 20px 10px;
+	font-size:2.5em;
+	}
+footer{
+	background-color:#800000;
+	color:#d4af37;
+	text-align:center;
+	padding:30px 10px 20px 10px;
+	height:100px;
+	}
+body{
+	background-color:rgb(212,175,55,10)
+}
+
+
+nav a{
+	background-color:#800000;
+	color:white;
+	padding:8px;
+	border:thin solid #0d1f2d;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	margin:20px;
+	max-width:100px;
+	float:left;
+	}
+
+nav a:visited{
+	color:gold;
+}
+
+nav a:hover{
+	background-color:#800000;
+	text-decoration:underline;
+	font-weight:bold;
+	color:white;
+	}
+	
+nav a:active{
+	text-decoration:none;
+}
+
+.clear-float{
+	clear:both;
+}
