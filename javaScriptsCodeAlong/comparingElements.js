@@ -25,3 +25,12 @@ for (var arrayPosition=0; arrayPosition < testArray.length -1;arrayPosition++){
 
     }
 }
+
+function findMax(ar){
+	var mx = ar[0]
+	for(var i =0; i<ar.length-1;i++){
+		if(ar[i+1]>mx)
+			mx = ar[i+1]
+	}
+	console.log("The Max value in ["+ar+"] is: "+mx)
+}

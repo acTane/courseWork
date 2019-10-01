@@ -1,0 +1,1 @@
+var isMouseTracking = false;
