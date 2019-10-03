@@ -6,42 +6,47 @@
 -->
 <html lang="en"> 
     <head> 
-        <title>Home Page</title>	
+        <title>Macs Pub Home</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		
 		<style>
 			p{
 			text-align:center
 		</style>
-		
     </head> 
-    
     <body>
         <header>
-			
             <h1>Mac's Pub</h1>
-			
         </header>
 
         <nav>
-				
-				<a href="home.html">Home</a>
-				<a href="menu.html">Menu</a>
-				<a href="contact.html">Contact Us</a>
-				<div class="clear-float"></div>
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link active" id="active" href="home.html"><i class="fas fa-home"></i></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="menu.html">Menu</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact Us</a>
+				</li>
+			<div class="clear-float"></div>
         </nav>
 		
 		<section>
 			<article>
-				
-					<img src="images/logo.png" alt="Mac's Pub Logo" style="width:400px; height:150px" />
+				<div class="container">
+					<img class="center" src="images/bar.jpg" alt="Mac's Pub Logo" style="width:400px; height:150px;" />
 				
 				
 					<p>
 						This is a restaurant that serves food and cold beer. Service is fast and friendly with fair prices.
 					</p>
 		
-				
+				</div>
 			</article>
 		</section>
 
@@ -55,5 +60,11 @@
 			</P>
 			</center>
         </footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body> 
 </html>
