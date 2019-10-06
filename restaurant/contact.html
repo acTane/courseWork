@@ -105,7 +105,7 @@ textarea {
 		
 		
 		<div class="container">
-		<form style=>
+		<form name="cont" onsubmit="return validateitems()">
 		<div class="form-group">
 			<label class="required" for="name">Name:</label>
 			<input type="text" class="form-control-inline" id="name" name="name" required >
@@ -131,33 +131,38 @@ textarea {
 			<label for="info">Additional Information:</label>
 			<textarea id="info" class="form-control-inline" name="info"></textarea>
 		</div>
-			
 			<label for="returner">Have you been to the restaurant before?</label>
-			<input type="radio" id="choice1" name="return" value="NO" checked>
-			<label for="choice1">No</label>
-			<input type="radio" id="choice2" name="return" value="YES">
-			<label for="choice2">Yes</label>
-			
-			<br /><br />
-			
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" id="choice1" name="return" value="NO" checked>
+			<label class="form-check-label" for="choice1">No</label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="radio" id="choice2" name="return" value="YES">
+			<label class="form-check-label" for="choice2">Yes</label>
+		</div>
+		<br/>
 			<label class="required" for="days">Best days to contact you:</label>
-			<input type="checkbox" id="monday" name="day" value="monday">
-			<label for="monday">M </label>
-			
-			<input type="checkbox" id="tuesday" name="day" value="tuesday">
-			<label for="tuesday">T </label>
-			
-			<input type="checkbox" id="wednesday" name="day" value="wednesday">
-			<label for="wednesday">W </label>
-			
-			<input type="checkbox" id="thursday" name="day" value="thursady">
-			<label for="thursday">Th </label>
-			
-			<input type="checkbox" id="friday" name="day" value="friday">
-			<label for="friday">F</label>
-			
-			<br /><br />
-			
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" id="monday" name="day" value="monday">
+			<label class="form-check-label" for="monday">M </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" id="tuesday" name="day" value="tuesday">
+			<label class="form-check-label" for="tuesday">T </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" id="wednesday" name="day" value="wednesday">
+			<label class="form-check-label" for="wednesday">W </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" id="thursday" name="day" value="thursady">
+			<label class="form-check-label" for="thursday">Th </label>
+		</div>
+		<div class="form-check form-check-inline">
+			<input class="form-check-input" type="checkbox" id="friday" name="day" value="friday">
+			<label class="form-check-label" for="friday">F</label>
+		</div>
+		<br/>
 			<input type="submit" name="submit" value="Send Request">
 			
 		
