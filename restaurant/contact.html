@@ -27,6 +27,15 @@ input[type=text] {
     font-size: 1.1em;
 }
 
+input[type=email] {
+    border: 2px solid #0d1f2d;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
 fieldset {
     background-color: #fef9ff;
     width: 100%;
@@ -35,9 +44,13 @@ fieldset {
     box-sizing:	border-box;
 }
 
-select, textarea {
+select {
     margin: 12px 0;
     font-size: 1em;
+}
+
+textarea{
+	
 }
 
 input[type=submit] {
@@ -90,17 +103,22 @@ textarea {
 			<div class="clear-float"></div>
         </nav>
 		
-		<center>
-		<form>
+		
+		<div class="container">
+		<form style=>
+		<div class="form-group">
 			<label class="required" for="name">Name:</label>
-			<input type="text" id="name" name="name" ><br /><br required />
-			
+			<input type="text" class="form-control-inline" id="name" name="name" required >
+		</div>
+		<div class="form-group">
 			<label class="required" for="email">Email:</label>
-			<input type="text" id="email" name="email" ><br /><br required />
-			
+			<input type="email" class="form-control-inline" id="email" name="email" required >
+		</div>
+		<div class="form-group">
 			<label class="required" for="phone">Phone:</label>
-			<input  type="text" id="phone" name="phone" ><br /><br required />
-			
+			<input  type="text" class="form-control-inline" id="phone" name="phone" required >
+		</div>
+		<div class="form-group">
 			<label for="reason">Reason for Inquiry: </label>
 			<select id="reason" name="reason">
 				<option value="catering" selected>Catering</option>
@@ -108,12 +126,11 @@ textarea {
 				<option value="feedback">Feedback</option>
 				<option value="other">Other</option>
 			</select>
-			
-			<br /><br />
-			
+		</div>
+		<div class="form-group">
 			<label for="info">Additional Information:</label>
-			<textarea id="info" name="info"></textarea>
-			<br/><br />
+			<textarea id="info" class="form-control-inline" name="info"></textarea>
+		</div>
 			
 			<label for="returner">Have you been to the restaurant before?</label>
 			<input type="radio" id="choice1" name="return" value="NO" checked>
@@ -144,9 +161,10 @@ textarea {
 			<input type="submit" name="submit" value="Send Request">
 			
 		
-
+		
 		</form>
-		</center>
+		</div>
+		
 
         <footer>
 			<center>
