@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<script type="text/JavaScript" src="scripts/forms.js"></script>
 		
 		<style>
 			label, fieldset{
@@ -105,18 +106,18 @@ textarea {
 		
 		
 		<div class="container">
-		<form name="cont" onsubmit="return validateitems()">
+		<form name="cont" >
 		<div class="form-group">
 			<label class="required" for="name">Name:</label>
-			<input type="text" class="form-control-inline" id="name" name="name" required >
+			<input type="text" class="form-control-inline" id="name" name="name" onchange="validateName(this.value)" required ><i id="nameCheck" class="fas fa-check" style="display:none"></i>
 		</div>
 		<div class="form-group">
 			<label class="required" for="email">Email:</label>
-			<input type="email" class="form-control-inline" id="email" name="email" required >
+			<input type="email" class="form-control-inline" id="email" name="email" onchange="validateEmail(this.value)" required ><i id="emailCheck" class="fas fa-check" style="display:none"></i>
 		</div>
 		<div class="form-group">
 			<label class="required" for="phone">Phone:</label>
-			<input  type="text" class="form-control-inline" id="phone" name="phone" required >
+			<input  type="tel" class="form-control-inline" id="phone" name="phone" onchange="validatePhone(this.value)" required ><i id="phoneCheck" class="fas fa-check" style="display:none"></i>
 		</div>
 		<div class="form-group">
 			<label for="reason">Reason for Inquiry: </label>
@@ -143,23 +144,23 @@ textarea {
 		<br/>
 			<label class="required" for="days">Best days to contact you:</label>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="monday" name="day" value="monday">
+			<input class="form-check-input" type="checkbox" id="monday" name="day" value="monday" checked>
 			<label class="form-check-label" for="monday">M </label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="tuesday" name="day" value="tuesday">
+			<input class="form-check-input" type="checkbox" id="tuesday" name="day" value="tuesday" checked>
 			<label class="form-check-label" for="tuesday">T </label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="wednesday" name="day" value="wednesday">
+			<input class="form-check-input" type="checkbox" id="wednesday" name="day" value="wednesday" checked>
 			<label class="form-check-label" for="wednesday">W </label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="thursday" name="day" value="thursady">
+			<input class="form-check-input" type="checkbox" id="thursday" name="day" value="thursady" checked>
 			<label class="form-check-label" for="thursday">Th </label>
 		</div>
 		<div class="form-check form-check-inline">
-			<input class="form-check-input" type="checkbox" id="friday" name="day" value="friday">
+			<input class="form-check-input" type="checkbox" id="friday" name="day" value="friday" checked>
 			<label class="form-check-label" for="friday">F</label>
 		</div>
 		<br/>
